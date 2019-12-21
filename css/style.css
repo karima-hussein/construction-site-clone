@@ -1,0 +1,226 @@
+
+/*  
+    general
+    header
+    navbar
+    sections
+        home
+        welcome
+        choose
+        service
+        contact
+    footer
+
+*/
+/* general */
+:root{
+    --my-yellow:#fecb10;
+    --my-dark:#26262b;
+    --mygrey:#afaeae;
+    /* --calh:calc(header + nav); */
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #fff;
+}
+.color-white{
+    color: #fff;
+}
+.color-yellow{
+    color: var(--my-yellow);
+}
+.color-grey{
+    color: var(--mygrey);
+}
+.yellow{
+    background-color: var(--my-yellow)
+}
+.pl-20{
+    padding-left: 25%;
+}
+.py-50{
+    padding:50px 0;
+}
+.py-100{
+    padding: 100px 0; 
+}
+.circle{
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+button ,a.btn{
+    color: #fff !important;
+}
+.font-size-45{
+    font-size: 45px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-22{
+    font-size: 22px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+.font-size-12{
+    font-size: 12px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.75);
+}
+/*end general */
+/* header */
+.main-header i{
+    cursor: pointer;
+}
+/* end header */
+/* navbar */
+nav{
+    background-color: var(--my-dark);
+}
+nav .navbar-brand h2{
+    font-size:22px;
+}
+nav .navbar-brand:hover{
+    color: var(--my-yellow) !important;
+}
+nav .navbar-brand h3{
+    font-size: 13px;   
+}
+nav .navbar-brand h3:hover{
+    color: var(--mygrey);
+}
+nav .links a{ 
+    transition: background-color 0.3s;
+}
+nav .links a:hover{
+    background-color: var(--mygrey);
+    color: #fff;
+}
+/* end navbar */
+/* home */
+.home{
+    width: 100%;
+    /* height: -webkit-calc(100% - 100px); */
+    height: calc(100vh - 100px);
+    background-image: url(../images/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .home-content h3{
+    font-weight: normal;
+}
+@media (max-width:770px){
+    .home .home-content h3,.home .home-content h2{
+        font-size: 25px;
+    }
+    .home .home-content p{
+        font-size: 12px;
+    }
+}
+@media (max-width:600px){
+    .home .home-content h3,.home .home-content h2{
+        font-size: 17px;
+    }
+    .home .home-content p{
+        font-size: 12px;
+    }
+}
+/* end home */
+/* welcome */
+.welcome .rightside img{
+    width: 100%;
+    height: 100%;
+}
+/* end welcome */
+/* choose */
+.choose{
+    background-color: rgba(223, 240, 243, 0.795);
+}
+.section-title{
+    font-size:35px;
+    text-transform: uppercase;
+    padding-bottom:20px ;
+}
+.section-des{
+    margin: 3% 0;
+    color:var(--my-dark);  
+}
+.choose .choose-content .choose-item{
+    position: relative;
+    padding-top: 200px;
+    text-align: center;
+}
+.choose .choose-content .choose-item i{
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: 12px solid var(--my-yellow);
+    box-shadow:0 0 0 12px rgba(228, 211, 117, 0.507),0 0 0 17px rgba(230, 230, 83, 0.445);
+}
+/* end choose */
+/* contact */
+.contact .contact-form{
+    background-color: var(--my-yellow);
+}
+.contact .contact-form .contact-form-header .scaled{
+    transform: scaleY(1.3);
+}
+.contact .contact-info{
+    background-image:url(../images/iStock-637710754.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.contact .contact-info .info-icons a{
+    text-align: center;
+   
+}
+.contact .contact-info .info-icons i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: var(--my-dark)
+}
+@media (max-width:992px){
+    .contact .contact-form .contact-form-header h2{
+        font-size: 20px;
+    }
+
+    .contact .contact-info{
+        height:680px
+    }
+    .contact .contact-info p.circle{
+        display: none;
+    }  
+}
+/* end contact */
+footer{
+    background-color: var(--my-dark);
+    padding: 10px 0;
+
+}
