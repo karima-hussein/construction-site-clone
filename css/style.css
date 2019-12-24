@@ -129,7 +129,7 @@ nav .links a:hover{
 }
 @media (max-width:770px){
     .home .home-content h3,.home .home-content h2{
-        font-size: 25px;
+        font-size: 27px;
     }
     .home .home-content p{
         font-size: 12px;
@@ -137,7 +137,7 @@ nav .links a:hover{
 }
 @media (max-width:600px){
     .home .home-content h3,.home .home-content h2{
-        font-size: 20px;
+        font-size: 23px;
     }
     .home .home-content p{
         font-size: 12px;
